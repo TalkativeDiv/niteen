@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niteen</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <i class="fas fa-camera-retro fa-beat" style="--fa-beat-scale: 2"></i>
+      <p>loading...</p>
+    </div>
+    <nav>
+      <h2>
+        <i
+          class="fas fa-camera-retro"
+          onmouseover="this.classList.add('fa-spin')"
+          onmouseleave="this.classList.remove('fa-spin')"
+        ></i>
+        Niteen
+      </h2>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#gallery"><i class="fas fa-image"></i> Gallery</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>
+          Hello! My name is Niteen
+          <i
+            class="fas fa-camera-retro"
+            onmouseover="this.classList.add('fa-spin')"
+            onmouseleave="this.classList.remove('fa-spin')"
+          ></i>
+        </h1>
+        <p>Photographer Based in India</p>
+        <a class="btn" href="#contact">Hire me <i class="fa-solid fa-briefcase"></i></a>
+      </div>
+    </div>
+
+    <section class="gallery" id="gallery">
+      <h2 class="light">Gallery</h2>
+
+      <div class="grid">
+        <div class="img-w">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg"
+            class="img-card"
+            alt="Trees during fall"
+          />
+          <div class="img-t">
+            In nature, nothing is perfect and everything is perfect. Trees can
+            be contorted, bent in weird ways, and they’re still beautiful. -
+            Alice walker
+          </div>
+        </div>
+        <div class="img-w">
+          <img
+            src="https://images.unsplash.com/photo-1610878180933-123728745d22?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FuYWRhJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+            class="img-card"
+            alt="glacier"
+          />
+          <div class="img-t">
+            Forget not that the earth delights to feel your bare feet and the
+            winds long to play with your hair. — Khalil Gibran
+          </div>
+        </div>
+        <div class="img-w">
+          <img
+            src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="img-card"
+            alt="glacier"
+          />
+          <div class="img-t">
+            Look deep into nature, and then you will understand everything
+            better. — Albert Einstein
+          </div>
+        </div>
+        <div class="img-w">
+          <img
+            src="https://wallpaperaccess.com/full/1163661.jpg"
+            class="img-card"
+            alt="glacier"
+          />
+          <div class="img-t">
+            Nature does not hurry, yet everything is accomplished. — Lao Tzu
+          </div>
+        </div>
+        <div class="img-w">
+          <img
+            src="https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp"
+            class="img-card"
+            alt="glacier"
+          />
+          <div class="img-t">
+            If you truly love nature, you will find beauty everywhere. — Laura
+            Ingalls Wilder
+          </div>
+        </div>
+        <div class="img-w">
+          <img
+            src="https://images.ctfassets.net/hrltx12pl8hq/7oQKmoi04ul0JsCUxkuHih/3fbf330101cffcce262c7ab54844009d/05-nature-backgrounds_1491895829.jpg?fit=fill&w=480&h=270"
+            class="img-card"
+            alt="glacier"
+          />
+          <div class="img-t">
+            There is something infinitely healing in the repeated refrains of
+            nature—the assurance that dawn comes after night, and spring after
+            winter. — Rachel Carson
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="contact">
+      © 2021 by Niteen - Photographer
+      <div class="icons">
+        <a href="mailto:niteen@example.com" class="icon"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          const preloader = document.querySelector(".preloader");
+          preloader.classList.add("fadeOut");
+        }, 1000);
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/861898755b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
