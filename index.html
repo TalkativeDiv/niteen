@@ -130,7 +130,7 @@
     </section>
 
     <section class="footer" id="contact">
-      © 2021 by Niteen - Photographer
+      © <span class="year"></span> by Niteen - Photographer
       <div class="icons">
         <a href="mailto:niteen@example.com" class="icon"
           ><i class="fas fa-envelope"></i
@@ -139,6 +139,7 @@
     </section>
     <script>
       window.addEventListener("load", () => {
+        document.querySelector(".year").innerText = date.getFullYear
         setTimeout(() => {
           const preloader = document.querySelector(".preloader");
           preloader.classList.add("fadeOut");
