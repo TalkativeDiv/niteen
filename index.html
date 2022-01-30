@@ -139,11 +139,9 @@
     </section>
     <script>
       window.addEventListener("load", () => {
-        document.querySelector(".year").innerText = date.getFullYear
-        setTimeout(() => {
+        document.querySelector(".year").innerText = Date.getFullYear
           const preloader = document.querySelector(".preloader");
           preloader.classList.add("fadeOut");
-        }, 1000);
       });
     </script>
     <script
